@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Admission Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <div class="brand">KPRIET <span>Student Portal</span></div>
+      <h1>Student Registration</h1>
+      <p class="subtitle">Create your admission profile securely.</p>
+      <form id="registrationForm" action="#" method="post" enctype="multipart/form-data" novalidate>
+        <div class="grid">
+          <label>Full Name<input id="name" name="name" type="text" placeholder="Enter your name"><small class="error" id="nameError"></small></label>
+          <label>Roll Number<input id="rollNumber" name="rollNumber" type="text" placeholder="24CS088"><small class="error" id="rollError"></small></label>
+          <label>Email<input id="email" name="email" type="email" placeholder="student@example.com"><small class="error" id="emailError"></small></label>
+          <label>Course<select id="course" name="course"><option value="">Select course</option><option>B.E. Computer Science and Engineering</option><option>B.E. CSE (Cyber Security)</option><option>B.Tech Information Technology</option></select><small class="error" id="courseError"></small></label>
+          <label>Password<input id="password" name="password" type="password" placeholder="Minimum 8 characters"><small class="hint">Use 8+ characters with upper, lower, number and special character.</small><small class="error" id="passwordError"></small></label>
+          <label>Profile / Document<input id="file" name="file" type="file" accept=".jpg,.jpeg,.png,.pdf"><small class="hint">JPG, PNG or PDF · Max 2 MB</small><small class="error" id="fileError"></small></label>
+        </div>
+        <button type="submit">Create Registration</button>
+        <p class="success" id="successMessage"></p>
+      </form>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
